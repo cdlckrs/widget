@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         </style>
         
-        <img src="your-image-url.jpg" id="openModalImage" alt="&#63;" style="cursor:pointer;">
+        <img src="https://cdn.filestackcontent.com/a29NShTwRbzeeuXxAlyh" id="openModalImage" alt="&#63;" style="cursor:pointer;">
 
         
         <div id="customModal" class="modal">
