@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Define the modal HTML with a unique container for the form
     var modalHTML = `
-
     <style type="text/css">
 
         .modal {
@@ -66,51 +66,55 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <img src="https://cdn.filestackcontent.com/a29NShTwRbzeeuXxAlyh" id="openModalImage" alt="&#63;" style="cursor:pointer;">
 
-        
-        <div id="customModal" class="modal">
-
+    <div id="customDynamicModal" class="modal">
         <div class="modalContent">
-                <span class="closeButton">&times;</span>
-                <div id="formContainer" data-paperform-id=""></div>
+            <span class="closeButton">&times;</span>
+            <div id="formContainer"></div>
         </div>
-
     </div>
+    `;
 
-
-    `; // END of our modal HTML string
-
-    // Inject the modal HTML
+    // Inject the modal HTML into the page
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
-    // Get the modal element and other elements
-    var modal = document.getElementById('customModal');
+    // Identify the modal and other elements
+    var modal = document.getElementById('customDynamicModal');
     var img = document.getElementById("openModalImage");
     var closeButton = document.getElementsByClassName("closeButton")[0];
 
-    // Event listeners for opening and closing the modal
+    // Open modal event
     img.onclick = function() {
         modal.style.display = "block";
+        // Dynamically set the Paperform ID
+        setPaperformId();
     };
 
+    // Close modal events
     closeButton.onclick = function() {
         modal.style.display = 'none';
     };
-
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
         }
     };
 
-    // Dynamically set the Paperform
-    var formSlug = modal.getAttribute('data-paperform-slug');
-    var formContainer = document.getElementById('formContainer');
-    if (formContainer && formSlug) {
-        formContainer.setAttribute('data-paperform-id', formSlug);
+    // Function to set the Paperform ID
+    function setPaperformId() {
+        // Get the original embedding element by its ID
+        var embeddingElement = document.getElementById('customModal');
+        // Retrieve the data-paperform-slug attribute
+        var formSlug = embeddingElement.getAttribute('data-paperform-slug');
+
+        // Set the Paperform ID to the formContainer
+        var formContainer = document.getElementById('formContainer');
+        if (formContainer && formSlug) {
+            formContainer.setAttribute('data-paperform-id', formSlug);
+        }
     }
 });
 
-// Append Paperform script to body
+// Append the Paperform script to the body
 (function() {
     var script = document.createElement('script');
     script.src = "https://paperform.co/__embed.min.js";
