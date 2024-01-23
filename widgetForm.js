@@ -112,11 +112,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Identify the modal and other elements
     var modal = document.getElementById('customDynamicModal');
-    var img = document.getElementById("openModal");
+    var div = document.getElementById("openModal");
     var closeButton = document.getElementsByClassName("closeButton")[0];
 
     // Open modal event
-    img.onclick = function() {
+    div.onclick = function() {
         modal.style.display = "block";
         // Dynamically set the FORM ID
         setFormId();
