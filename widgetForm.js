@@ -56,51 +56,27 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; 
             position: fixed; 
             bottom: 20px; 
-            left: 20px; 
+            right: 20px; 
             cursor: pointer;
             z-index: 2; 
         }
 
-        .circles-nav-fixed-div::-webkit-scrollbar {
-            display: none;
-        }
-
-        .circles-nav-fixed-div {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-
-        .circles-nav-fixed-div {
-            height: 100%;
-            width: 80px;
-            position: fixed;
-            z-index: 10;
-            top: 0;
-            right: 0;
-            background-color: transparent;
-            overflow-x: hidden;
-            padding-top: 15px;
-            padding-left: 10px !important;
-            padding-right: 10px;
-        }
-
-        .circles-nav-fixed-div a {
-            display: block;
-        }
-
-        .circles-nav-fixed-circle {
+        .openModal-fixed-circle {
             background-color: var(--color1) !important;
             border-radius: 50%;
             padding: 18px;
             height: 60px;
             width: 60px;
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px;
             color: #1f1f1f !important;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
             z-index: 3 !important;
             margin-bottom: 5px !important;
         }
 
-        .circles-nav-fixed-icon {
+        .openModal-fixed-circle-icon {
             font-size: 24px !important;
             color: #1f1f1f !important;
             line-height: normal !important;
@@ -109,11 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
             display: inline-block !important;
         }
 
-        .circles-nav-fixed-icon:hover {
+        .openModal-fixed-circle-icon:hover {
           color: #ffffff !important;
         }
 
-        .circles-nav-fixed-icon:hover a {
+        .copenModal-fixed-circle-icon:hover a {
           color:  #1f1f1f !important;
         }
 
@@ -121,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <div class="circles-nav-fixed-div" id="openModal" alt="&#63;" style="cursor:pointer;"><a class="circles-nav-fixed-circle"><i class="circles-nav-fixed-icon ti-comment"></i></a></div>
+        <div><a class="circles-nav-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="circles-nav-fixed-icon ti-comment"></i></a></div>
         
     <div id="customDynamicModal" class="modal">
         <div class="modalContent">
