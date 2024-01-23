@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         #openModal {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; 
             position: fixed; 
             bottom: 20px; 
             left: 20px; 
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <div class="circles-nav-fixed-div" id="openModal" alt="&#63;" style="cursor:pointer;"><a class="circles-nav-fixed-circle"><i class="circles-nav-fixed-icon ti-comment"></i></a>
+        <div class="circles-nav-fixed-div" id="openModal" alt="&#63;" style="cursor:pointer;"><a class="circles-nav-fixed-circle"><i class="circles-nav-fixed-icon ti-comment"></i></a></div>
         
     <div id="customDynamicModal" class="modal">
         <div class="modalContent">
