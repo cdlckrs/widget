@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <div><a class="circles-nav-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="circles-nav-fixed-icon ti-comment"></i></a></div>
+        <div><a class="openModal-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="openModal-fixed-circle-icon ti-comment"></i></a></div>
         
     <div id="customDynamicModal" class="modal">
         <div class="modalContent">
