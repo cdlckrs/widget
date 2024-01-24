@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             width: 100%;
             height: 100%;
             overflow: auto; 
-            background-color: rgba(255, 255, 255, 0.5) !important;
+            background-color: rgba(255, 255, 255, 0.8) !important;
         }
 
         .widgetModalContent {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             padding: 18px;
             position: fixed; 
             bottom: 20px; 
-            right: 20px;
+            right: 50px;
             color: #1f1f1f !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
             z-index: 3 !important;
