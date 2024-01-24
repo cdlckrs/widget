@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var modalHTML = `
     <style type="text/css">
 
+        :root {
+          --widgetColor: #ffffff;
+        }
+
         .widgetModal {
             display: none; 
             position: fixed; 
