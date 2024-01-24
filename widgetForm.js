@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var modalHTML = `
     <style type="text/css">
 
+        .widget-color {
+            background-color: #B68E91;
+        }
+
         .widgetModal {
             display: none; 
             position: fixed; 
@@ -67,10 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
             z-index: 3 !important;
             margin-bottom: 5px !important;
-        }
-
-        .widget-color {
-            background-color: inherit;
         }
 
         .widget-openModal-fixed-circle-icon {
