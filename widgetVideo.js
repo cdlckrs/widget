@@ -25,29 +25,40 @@ document.addEventListener('DOMContentLoaded', function() {
             margin-bottom: 15px !important;
             margin-right: auto;
             margin-left: auto; 
-            padding: 20px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
             border: none !important;
             width: 80%;
+            max-height: 600px;
             border-radius: 20px !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
-            overflow-x: scroll;
+            overflow-y: visible;
+            overflow-wrap: break-word;
         }
 
-        .widgetModalContent iframe {
-            width: calc(100% - 40px);
-            height: calc(100% - 40px); 
+        .widgetModalContent iframe { 
             border: none !important; 
-            padding: 20px; 
-            box-sizing: border-box; 
+            box-sizing: border-box;
+            border-radius: 20px !important;
         }
 
         .widgetCloseButton {
+            right: 11%;
+            top: 55px;
             color: #1f1f1f !important;
-            float: right;
-            font-size: 24px !important;
+            margin-left: 75%;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 0px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            font-size: 36px !important;
             font-weight: normal;
-            position: relative !important;
+            position: absolute !important;
             z-index: 10 !important;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
         }
 
         .widgetCloseButton:hover,
@@ -117,9 +128,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="widget-openModal-div"><a class="widget-openModal-fixed-circle widget-color" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a></div>
         
         <div id="customDynamicModal" class="widgetModal">
+            
             <div class="widgetModalContent">
-                <span class="widgetCloseButton">&times;</span>
-                    <div id="videoContainer">
+
+                    <div id="videoContainer" style="border-radius: 20px !important;">
+
+                        <span class="widgetCloseButton">&times;</span>
 
                         <iframe src="https://www.videoask.com/fdcr58i9s?fullscreen&propertyemail=XXXX&propertyid=XXXX&propertyname=XXXX&propertyslug=XXXX" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 20px !important; min-height: 600px;"></iframe>
 
