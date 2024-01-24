@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <style type="text/css">
 
         :root {
-          --widgetColor: #ffffff;
+          --widgetColor: #C5A6A8;
         }
 
         .widgetModal {
