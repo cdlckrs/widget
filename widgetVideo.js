@@ -47,18 +47,21 @@ document.addEventListener('DOMContentLoaded', function() {
         .widgetCloseButton {
             right: 11%;
             top: 55px;
-            color: #1f1f1f !important;
-            margin-left: 75%;
-            padding-left: 12px;
-            padding-right: 12px;
-            padding-top: 0px;
             background-color: #ffffff;
             border-radius: 100%;
-            font-size: 36px !important;
-            font-weight: normal;
             position: absolute !important;
             z-index: 10 !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+        }
+
+        .widgetCloseButton-icon {
+            color: #1f1f1f !important;
+            padding-left: 9px !important;
+            padding-right: 9px !important;
+            padding-top: 9px !important;
+            padding-bottom: 9px !important;
+            font-size: 12px !important;
+            font-weight: bold !important;
         }
 
         .widgetCloseButton:hover,
@@ -133,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div id="videoContainer" style="border-radius: 20px !important;">
 
-                        <span class="widgetCloseButton">&times;</span>
+                        <span class="widgetCloseButton"><i class="widgetCloseButton-icon ti-close"></i></span>
 
                         <iframe src="https://www.videoask.com/fdcr58i9s?fullscreen&propertyemail=XXXX&propertyid=XXXX&propertyname=XXXX&propertyslug=XXXX" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 20px !important; min-height: 600px;"></iframe>
 
