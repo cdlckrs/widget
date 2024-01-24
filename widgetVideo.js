@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .widgetCloseButton-icon {
             color: #1f1f1f !important;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            padding-top: 5px !important;
-            padding-bottom: 5px !important;
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
             font-size: 12px !important;
             font-weight: bold !important;
         }
