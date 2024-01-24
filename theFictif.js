@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var modalHTML = `
     <style type="text/css">
 
-        .modal {
+        .widgetModal {
             display: none; 
             position: fixed; 
             z-index: 1;
@@ -15,17 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: rgba(255, 255, 255, 0.5) !important;
         }
 
-        .modalContent {
+        .widgetModalContent {
             background-color: #ffffff !important;
-            margin: 15% auto; 
-            padding: 20px;
-            border: 1px solid #ffffff;
+            margin-top: 45px !important;
+            margin-bottom: 15px !important;
+            margin-right: auto;
+            margin-left: auto; 
+            padding: 20px !important;
+            border: none !important;
             width: 80%;
             border-radius: 20px !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
         }
 
-        .modalContent iframe {
+        .widgetModalContent iframe {
             width: calc(100% - 40px);
             height: calc(100% - 40px); 
             border: none !important; 
@@ -33,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             box-sizing: border-box; 
         }
 
-        .closeButton {
+        .widgetCloseButton {
             color: #1f1f1f !important;
             float: right;
             font-size: 24px !important;
@@ -42,16 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
             z-index: 10 !important;
         }
 
-        .closeButton:hover,
+        .widgetCloseButton:hover,
         .closeButton:focus {
             color: #1f1f1f !important;
             text-decoration: none !important;
             cursor: pointer;
         }
 
-        #openModal {
-            width: 24px;
-            height: 24px;
+        #widgetOpenModal {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;  
             position: fixed; 
             bottom: 20px; 
@@ -60,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             z-index: 2; 
         }
 
-        .openModal-fixed-circle {
+        .widget-openModal-fixed-circle {
             background-color: var(--color1) !important;
             border-radius: 50% !important;
             height: 60px;
@@ -75,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             margin-bottom: 5px !important;
         }
 
-        .openModal-fixed-circle-icon {
+        .widget-openModal-fixed-circle-icon {
             font-size: 24px !important;
             color: #1f1f1f !important;
             line-height: normal !important;
@@ -85,25 +88,34 @@ document.addEventListener('DOMContentLoaded', function() {
             text-decoration: none !important;
         }
 
-        .openModal-fixed-circle-icon:hover {
+        .widget-openModal-fixed-circle-icon:hover {
           color: #1f1f1f !important;
           text-decoration: none !important;
         }
 
-        .copenModal-fixed-circle-icon:hover a {
+        .widget-openModal-fixed-circle-icon:hover a {
           color:  #1f1f1f !important;
           text-decoration: none !important;
+        }
+
+        .widgetModal::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        .widgetModal {
+            -ms-overflow-style: none !important;
+            scrollbar-width: none !important;
         }
 
         </style>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <a class="openModal-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="openModal-fixed-circle-icon ti-comment"></i></a>
+        <a class="widget-openModal-fixed-circle" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a>
         
-        <div id="customDynamicModal" class="modal">
-            <div class="modalContent">
-                <span class="closeButton">&times;</span>
+        <div id="customDynamicModal" class="widgetModal">
+            <div class="widgetModalContent">
+                <span class="widgetCloseButton">&times;</span>
                     <div id="formContainer">
 
                         <div data-paperform-id="w3bjtuop"></div>
@@ -117,22 +129,22 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
     // Identify the modal and other elements
-    var modal = document.getElementById('customDynamicModal');
-    var showModal = document.getElementById("openModal");
-    var closeButton = document.getElementsByClassName("closeButton")[0];
+    var widgetModal = document.getElementById('customDynamicModal');
+    var widgetDisplayModal = document.getElementById("widgetOpenModal");
+    var closeButton = document.getElementsByClassName("widgetCloseButton")[0];
 
     // Open modal event
-    showModal.onclick = function() {
-        modal.style.display = "block";
+    widgetDisplayModal.onclick = function() {
+        widgetModal.style.display = "block";
     };
 
     // Close modal events
     closeButton.onclick = function() {
-        modal.style.display = 'none';
+        widgetModal.style.display = 'none';
     };
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
+        if (event.target == widgetModal) {
+            widgetModal.style.display = 'none';
         }
     };
 
@@ -144,7 +156,3 @@ document.addEventListener('DOMContentLoaded', function() {
     script.src = "https://paperform.co/__embed.min.js";
     document.body.appendChild(script);
 })();
-
-
-
-
