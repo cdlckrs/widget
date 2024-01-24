@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             width: 80%;
             border-radius: 20px !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+            overflow-x: scroll;
         }
 
         .widgetModalContent iframe {
@@ -53,21 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         #widgetOpenModal {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;  
             position: fixed; 
-            bottom: 20px; 
-            right: 20px; 
-            cursor: pointer;
-            z-index: 2; 
         }
 
         .widget-openModal-fixed-circle {
             background-color: var(--color1) !important;
             border-radius: 50% !important;
-            height: 60px;
-            width: 60px;
+            height: 24px;
+            width: 24px;
             padding: 18px;
             position: fixed; 
             bottom: 20px; 
@@ -108,18 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .widget-openModal-div {
-            height: 80px;
-            width: 80px;
             position: fixed;
-            z-index: 10;
-            bottom: 0;
-            right: 0;
-            background-color: transparent;
-            overflow-x: hidden;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px !important;
-            padding-right: 10px;
         }
 
         .widget-openModal-div a {
