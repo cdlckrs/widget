@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
             border-radius: 50% !important;;
             padding: 18px;
             position: fixed; 
-            bottom: 20px; 
-            right: 50px;
+            bottom: 30px; 
+            right: 5%;
             color: #1f1f1f !important;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
             z-index: 3 !important;
