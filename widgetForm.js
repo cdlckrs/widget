@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var modalHTML = `
     <style type="text/css">
 
-        :root {
-          --widgetColor: #C5A6A8;
-        }
-
         .widgetModal {
             display: none; 
             position: fixed; 
@@ -62,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .widget-openModal-fixed-circle {
-            background-color: var(--widgetColor) !important;
             border-radius: 50% !important;;
             padding: 18px;
             position: fixed; 
@@ -72,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
             z-index: 3 !important;
             margin-bottom: 5px !important;
+        }
+
+        .widget-color {
+            background-color: inherit;
         }
 
         .widget-openModal-fixed-circle-icon {
@@ -115,14 +114,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <div class="widget-openModal-div"><a class="widget-openModal-fixed-circle" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a></div>
+        <div class="widget-openModal-div"><a class="widget-openModal-fixed-circle widget-color" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a></div>
         
         <div id="customDynamicModal" class="widgetModal">
             <div class="widgetModalContent">
                 <span class="widgetCloseButton">&times;</span>
                     <div id="formContainer">
 
-                        <div data-paperform-id="w3bjtuop"></div>
+                        <div data-paperform-id="dr2rvvgr"></div>
 
                     </div>
             </div>
