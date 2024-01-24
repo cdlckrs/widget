@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="widgetCloseButton">&times;</span>
                     <div id="videoContainer">
 
-                        <iframe src="https://www.videoask.com/fdcr58i9s" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 20px"></iframe>
+                        <iframe src="https://www.videoask.com/fdcr58i9s?fullscreen&propertyemail=XXXX&propertyid=XXXX&propertyname=XXXX&propertyslug=XXXX" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 20px !important; min-height: 600px;"></iframe>
 
                     </div>
             </div>
@@ -152,8 +152,3 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 });
-
-
-
-
-
