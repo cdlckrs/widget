@@ -98,20 +98,39 @@ document.addEventListener('DOMContentLoaded', function() {
           text-decoration: none !important;
         }
 
-        .widgetModal::-webkit-scrollbar {
+        .widgetModalContent::-webkit-scrollbar {
             display: none !important;
         }
 
-        .widgetModal {
+        .widgetModalContent {
             -ms-overflow-style: none !important;
             scrollbar-width: none !important;
+        }
+
+        .widget-openModal-div {
+            height: 80px;
+            width: 80px;
+            position: fixed;
+            z-index: 10;
+            bottom: 0;
+            right: 0;
+            background-color: transparent;
+            overflow-x: hidden;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px !important;
+            padding-right: 10px;
+        }
+
+        .widget-openModal-div a {
+            display: block;
         }
 
         </style>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <a class="widget-openModal-fixed-circle" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a>
+        <div class="widget-openModal-div"><a class="widget-openModal-fixed-circle" id="widgetOpenModal"><i class="widget-openModal-fixed-circle-icon ti-comment"></i></a></div>
         
         <div id="customDynamicModal" class="widgetModal">
             <div class="widgetModalContent">
@@ -156,7 +175,3 @@ document.addEventListener('DOMContentLoaded', function() {
     script.src = "https://paperform.co/__embed.min.js";
     document.body.appendChild(script);
 })();
-
-
-
-
