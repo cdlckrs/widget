@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .widget-openModal-fixed-circle {
-            background-color: var(--color1) !important;
+            background-color: var(--widgetColor) !important;
             border-radius: 50% !important;;
             padding: 18px;
             position: fixed; 
