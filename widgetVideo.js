@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .widgetCloseButton-icon {
             color: #1f1f1f !important;
-            padding-left: 9px !important;
-            padding-right: 9px !important;
-            padding-top: 9px !important;
-            padding-bottom: 9px !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
             font-size: 12px !important;
             font-weight: bold !important;
         }
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div id="videoContainer" style="border-radius: 20px !important;">
 
-                        <span class="widgetCloseButton"><i class="widgetCloseButton-icon ti-close"></i></span>
+                        <div class="widgetCloseButton"><div class="widgetCloseButton-icon">&#10005;</div></div>
 
                         <iframe src="https://www.videoask.com/fdcr58i9s?fullscreen&propertyemail=XXXX&propertyid=XXXX&propertyname=XXXX&propertyslug=XXXX" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 20px !important; min-height: 600px;"></iframe>
 
