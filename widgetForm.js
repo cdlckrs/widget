@@ -97,12 +97,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdlckrs/tdm@406dc861e74cff12438d2ac42850d3a0e47e2c29/cL-icons-themify-tdm.css" />
 
-        <div><a class="openModal-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="openModal-fixed-circle-icon ti-comment"></i></a></div>
+        <a class="openModal-fixed-circle" id="openModal" alt="&#63;" style="cursor:pointer;"><i class="openModal-fixed-circle-icon ti-comment"></i></a>
         
     <div id="customDynamicModal" class="modal">
         <div class="modalContent">
             <span class="closeButton">&times;</span>
-            <div id="formContainer"></div>
+            <div id="formContainer">
+
+                <div id="widgetForm" data-form-slug=""></div>
+
+            </div>
         </div>
     </div>
     `;
@@ -112,11 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Identify the modal and other elements
     var modal = document.getElementById('customDynamicModal');
-    var div = document.getElementById("openModal");
+    var showModal = document.getElementById("openModal");
     var closeButton = document.getElementsByClassName("closeButton")[0];
 
     // Open modal event
-    div.onclick = function() {
+    showModal.onclick = function() {
         modal.style.display = "block";
         // Dynamically set the FORM ID
         setFormId();
