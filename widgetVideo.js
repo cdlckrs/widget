@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             .widgetCloseButton {
-                right: 11%;
+                right: 3%;
             }
         }
 
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             .widgetCloseButton {
-                right: 11%;
+                right: 3%;
             }
         }
 
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             .widgetCloseButton {
-                right: 11%;
+                right: 6%;
             }
         }
 
